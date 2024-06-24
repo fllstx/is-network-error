@@ -1,6 +1,6 @@
 {
 	"name": "@fullstax/is-network-error",
-	"version": "1.1.0",
+	"version": "1.1.0-patch.1",
 	"description": "Check if a value is a Fetch network error",
 	"license": "MIT",
 	"repository": "fllstx/is-network-error",
@@ -26,7 +26,8 @@
 	},
 	"files": [
 		"index.js",
-		"index.d.ts"
+		"index.d.ts",
+		"index.cjs"
 	],
 	"keywords": [
 		"network",
