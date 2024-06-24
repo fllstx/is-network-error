@@ -1,9 +1,9 @@
 {
-	"name": "is-network-error",
+	"name": "@fullstax/is-network-error",
 	"version": "1.1.0",
 	"description": "Check if a value is a Fetch network error",
 	"license": "MIT",
-	"repository": "sindresorhus/is-network-error",
+	"repository": "fllstx/is-network-error",
 	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
@@ -13,14 +13,16 @@
 	"type": "module",
 	"exports": {
 		"types": "./index.d.ts",
-		"default": "./index.js"
+		"default": "./index.js",
+		"require": "./index.cjs"
 	},
 	"sideEffects": false,
 	"engines": {
 		"node": ">=16"
 	},
 	"scripts": {
-		"test": "xo && ava && tsd"
+		"test": "xo && ava && tsd",
+		"build": "npx rollup index.js --file index.cjs --format cjs"
 	},
 	"files": [
 		"index.js",
